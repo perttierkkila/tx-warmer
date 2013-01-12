@@ -73,19 +73,12 @@ void setup() {
   pinMode(PIN_BUTTON, INPUT);
   digitalWrite(PIN_BUTTON, HIGH); // enable INPUT_PULLUP, not supported with attiny
 
-  // calculate cutoff and critical voltages
-  long batteryVoltage = readVoltage();
-  int cellCount = calculateCellCount(batteryVoltage);
-
-  // request at least 2 cells (LDO shouldn't even work = error)
-  if (cellCount < 1)
-    stage = STAGE_CUTOFF;
-
-  cutoffVoltage = cellCount * LIPO_CUTOFF_VOLTAGE;
-  criticalVoltage = cellCount * LIPO_CRITICAL_VOLTAGE;
+  // constant cut-off for 4S-life
+  cutoffVoltage = 9500;
+  criticalVoltage = 9000;
 
   // indicate cell count by blinking both leds
-  for (int i = 0; i < cellCount; i++) {
+  for (int i = 0; i < 4; i++) {
     digitalWrite(PIN_GREEN, HIGH);
     digitalWrite(PIN_RED, HIGH);
     delay(100);
