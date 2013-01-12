@@ -12,13 +12,13 @@
 // sizeof-array
 
 // heater element resistance, mOhm
-const long HEATER_RESISTANCE = 1900; 
+const long HEATER_RESISTANCE = 5450; 
 
 // heater element power settings, watts
 const int HEATER_POWER[] = {
-  10, 20, 30, 40, 50};
+  5, 10, 15, 20, 25, 30};
 // count of HEATER_POWER-elements
-const int HEATER_POWER_SIZE = 5;
+const int HEATER_POWER_SIZE = 6;
 
 // battery resistor divider, kOhm
 const int ADC_RESISTOR_HIGH = 100;
@@ -73,19 +73,12 @@ void setup() {
   pinMode(PIN_BUTTON, INPUT);
   digitalWrite(PIN_BUTTON, HIGH); // enable INPUT_PULLUP, not supported with attiny
 
-  // calculate cutoff and critical voltages
-  long batteryVoltage = readVoltage();
-  int cellCount = calculateCellCount(batteryVoltage);
-
-  // request at least 2 cells (LDO shouldn't even work = error)
-  if (cellCount < 1)
-    stage = STAGE_CUTOFF;
-
-  cutoffVoltage = cellCount * LIPO_CUTOFF_VOLTAGE;
-  criticalVoltage = cellCount * LIPO_CRITICAL_VOLTAGE;
+  // constant cut-off for 12V pb (running and charging)
+  cutoffVoltage = 12500;
+  criticalVoltage = 9000;
 
   // indicate cell count by blinking both leds
-  for (int i = 0; i < cellCount; i++) {
+  for (int i = 0; i < 1; i++) {
     digitalWrite(PIN_GREEN, HIGH);
     digitalWrite(PIN_RED, HIGH);
     delay(100);
