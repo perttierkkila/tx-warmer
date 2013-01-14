@@ -25,8 +25,8 @@ const int ADC_RESISTOR_HIGH = 100;
 const int ADC_RESISTOR_LOW = 56;
 
 // Lipo-specific settings per cell, mV
-const int LIPO_CUTOFF_VOLTAGE = 3750;
-const int LIPO_CRITICAL_VOLTAGE = 3600;
+const int LIPO_CUTOFF_VOLTAGE = 3650;
+const int LIPO_CRITICAL_VOLTAGE = 3500;
 
 // ATtiny pin mappings
 // for ADC, use ADC-channel number
@@ -138,6 +138,8 @@ void loop() {
   int newDutyCycle = calculateDutyCycle(batteryVoltage);
   if (dutyCycle != newDutyCycle) {
     dutyCycle = newDutyCycle;
+    // prescaler 1024: TCCR0B = _BV(CS00) | _BV(CS02); 
+    // result => works and breaks delays (also affected by prescaler)
     analogWrite(PIN_PWM, newDutyCycle);
   }
 
