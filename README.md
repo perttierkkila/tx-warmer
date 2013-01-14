@@ -14,4 +14,11 @@ In Finnish: http://www.kopterit.net/index.php/topic,17572.0.html
 - constant heatpower stages (configurable) using PWM
 - lipo-cell count auto-detection
 - battery-monitor for cutoff
-- Arduino-code with http://code.google.com/p/arduino-tiny/
+
+### Steps to get stuff working
+- build hardware
+- get Arduino 1.0.1 (1.0.2 won't work)
+- get arduino-tiny -libraries (core + PinChangeInterrupt): http://code.google.com/p/arduino-tiny/
+- suitable programmer (Arduino as ISP works well)
+- for a new chip, burn bootloader
+- burn firmware
