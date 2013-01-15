@@ -119,6 +119,7 @@
 <hole x="33.4518" y="1.7018" drill="2.54"/>
 <text x="19.05" y="13.335" size="1.27" layer="22" rot="MR180">TX-warmer v1.4</text>
 <text x="16.51" y="10.795" size="1.27" layer="22" rot="MR180">Pertti Erkkilä 2012</text>
+<wire x1="10.16" y1="22.86" x2="5.08" y2="22.86" width="0.254" layer="21" curve="-106.260205"/>
 </plain>
 <libraries>
 <library name="ic-package">
@@ -217,30 +218,6 @@ by R. Vogg  15.March.2002</description>
 <rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
 <rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
 <hole x="0" y="11.176" drill="3.302"/>
-</package>
-</packages>
-</library>
-<library name="linear">
-<description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
-Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TO92">
-<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
-<wire x1="-2.095" y1="-1.651" x2="-0.7869" y2="2.5484" width="0.1524" layer="21" curve="-111.097684"/>
-<wire x1="0.7869" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.097684"/>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-0.7864" y1="2.5484" x2="0.7864" y2="2.5484" width="0.1524" layer="51" curve="-34.298964"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="2.413" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="2.921" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -428,6 +405,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="1" x="0" y="0" drill="2" diameter="3.302" rot="R90"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="1X03_NO_SILK">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
 </packages>
 </library>
@@ -652,9 +639,6 @@ design rules under a new name.</description>
 <element name="IRLB8743" library="transistor-fet" package="TO220" value="IRLB8743" x="20.32" y="35.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.257" y="39.37" size="1.016" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="IC2" library="linear" package="TO92" value="MCP1702" x="10.16" y="24.765" smashed="yes">
-<attribute name="VALUE" x="6.858" y="27.94" size="1.016" layer="21" ratio="10"/>
-</element>
 <element name="SWITCH" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="" x="36.83" y="22.86" smashed="yes" rot="MR180"/>
 <element name="R9" library="SparkFun-Resistors" package="AXIAL-0.3EZ" value="270" x="21.59" y="22.86" smashed="yes" rot="R270">
 <attribute name="VALUE" x="21.082" y="24.384" size="1.016" layer="21" font="vector" ratio="15" rot="R270"/>
@@ -685,10 +669,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="16.51" y="2.032" size="1.016" layer="21" rot="R90"/>
 </element>
 <element name="C1" library="SparkFun-Passives" package="CAP-PTH-SMALLEZ" value="2.2uF" x="11.43" y="20.32" smashed="yes" rot="R180">
-<attribute name="VALUE" x="6.35" y="22.606" size="1.016" layer="21" rot="R270"/>
+<attribute name="VALUE" x="8.255" y="17.907" size="1.016" layer="21"/>
 </element>
-<element name="C2" library="SparkFun-Passives" package="CAP-PTH-SMALLEZ" value="2.2uF" x="3.81" y="24.13" smashed="yes" rot="R90">
-<attribute name="VALUE" x="2.286" y="23.622" size="1.016" layer="21" rot="R90"/>
+<element name="C2" library="SparkFun-Passives" package="CAP-PTH-SMALLEZ" value="2.2uF" x="3.81" y="20.32" smashed="yes">
+<attribute name="VALUE" x="3.175" y="17.907" size="1.016" layer="21"/>
 </element>
 <element name="C3" library="SparkFun-Passives" package="CAP-PTH-SMALLEZ" value="0.1uF" x="15.24" y="12.7" smashed="yes" rot="R270">
 <attribute name="VALUE" x="12.7" y="13.716" size="1.016" layer="21" rot="R270"/>
@@ -708,21 +692,24 @@ design rules under a new name.</description>
 <element name="H-" library="SparkFun-Connectors" package="1X01_2MM" value="M01PTH_2MM" x="3.81" y="36.83" smashed="yes">
 <attribute name="NAME" x="0.7112" y="35.4838" size="1.27" layer="25" rot="R90"/>
 </element>
+<element name="LP2950" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="5.08" y="24.13" smashed="yes">
+<attribute name="NAME" x="4.318" y="25.9588" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="3.81" y="20.955" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="N$4">
 <contactref element="R3" pad="P$1"/>
-<contactref element="IC2" pad="2"/>
 <contactref element="C2" pad="1"/>
-<wire x1="10.16" y1="26.67" x2="7.62" y2="26.67" width="1.27" layer="1"/>
-<wire x1="7.62" y1="26.67" x2="5.08" y2="24.13" width="1.27" layer="1"/>
-<wire x1="5.08" y1="24.13" x2="3.81" y2="24.13" width="1.27" layer="1"/>
 <contactref element="B+" pad="1"/>
 <contactref element="H+" pad="1"/>
 <wire x1="3.81" y1="10.16" x2="3.81" y2="15.24" width="3.81" layer="16"/>
 <wire x1="3.81" y1="10.16" x2="3.81" y2="15.24" width="3.81" layer="1"/>
 <wire x1="8.89" y1="10.16" x2="3.81" y2="10.16" width="0.6096" layer="1"/>
-<wire x1="3.81" y1="24.13" x2="3.81" y2="15.24" width="1.27" layer="1"/>
+<wire x1="3.81" y1="20.32" x2="3.81" y2="15.24" width="1.27" layer="1"/>
+<contactref element="LP2950" pad="1"/>
+<wire x1="3.81" y1="20.32" x2="3.81" y2="22.86" width="1.27" layer="1"/>
+<wire x1="3.81" y1="22.86" x2="5.08" y2="24.13" width="1.27" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="ATTINY84A" pad="14"/>
@@ -733,7 +720,6 @@ design rules under a new name.</description>
 <contactref element="SWITCH" pad="4"/>
 <contactref element="LED2" pad="K"/>
 <contactref element="LED1" pad="K"/>
-<contactref element="IC2" pad="1"/>
 <contactref element="ISP" pad="4"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
@@ -755,19 +741,18 @@ design rules under a new name.</description>
 <wire x1="13.97" y1="33.02" x2="15.24" y2="33.02" width="2.1844" layer="16"/>
 <wire x1="13.97" y1="33.02" x2="15.24" y2="33.02" width="2.1844" layer="1"/>
 <wire x1="3.81" y1="31.75" x2="13.97" y2="31.75" width="2.54" layer="16"/>
+<contactref element="LP2950" pad="2"/>
 </signal>
 <signal name="5V">
 <contactref element="ATTINY84A" pad="1"/>
 <contactref element="ISP" pad="3"/>
 <wire x1="17.78" y1="7.62" x2="19.05" y2="8.89" width="0.6096" layer="1"/>
-<contactref element="IC2" pad="3"/>
 <contactref element="C5" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="R1" pad="P$1"/>
 <wire x1="17.78" y1="5.08" x2="17.78" y2="7.62" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="8.89" x2="17.78" y2="8.89" width="0.6096" layer="1"/>
-<wire x1="11.43" y1="24.765" x2="11.43" y2="20.32" width="1.27" layer="1"/>
 <wire x1="11.43" y1="20.32" x2="11.43" y2="15.24" width="1.27" layer="1"/>
 <wire x1="17.78" y1="7.62" x2="17.78" y2="8.89" width="1.27" layer="1"/>
 <wire x1="15.24" y1="12.7" x2="13.97" y2="12.7" width="1.27" layer="1"/>
@@ -779,6 +764,9 @@ design rules under a new name.</description>
 <wire x1="21.59" y1="11.43" x2="35.56" y2="11.43" width="0.6096" layer="1"/>
 <wire x1="35.56" y1="11.43" x2="36.83" y2="10.16" width="0.6096" layer="1"/>
 <wire x1="36.83" y1="10.16" x2="38.1" y2="10.16" width="0.6096" layer="1"/>
+<contactref element="LP2950" pad="3"/>
+<wire x1="11.43" y1="20.32" x2="11.43" y2="22.86" width="1.27" layer="1"/>
+<wire x1="11.43" y1="22.86" x2="10.16" y2="24.13" width="1.27" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="IRLB8743" pad="1"/>
