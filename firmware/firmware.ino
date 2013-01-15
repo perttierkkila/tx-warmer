@@ -22,7 +22,7 @@ const int HEATER_POWER_SIZE = 5;
 
 // battery resistor divider, kOhm
 const int ADC_RESISTOR_HIGH = 100;
-const int ADC_RESISTOR_LOW = 56;
+const int ADC_RESISTOR_LOW = 33;
 
 // Lipo-specific settings per cell, mV
 const int LIPO_CUTOFF_VOLTAGE = 3650;

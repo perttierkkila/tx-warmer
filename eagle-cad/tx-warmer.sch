@@ -3716,7 +3716,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="EZ" value="220"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="EZ" value="100k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="EZ" value="100k"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="EZ" value="56k"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="EZ" value="33k"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED1" library="SparkFun-LED" deviceset="LED" device="5MM-KIT" value="GREEN"/>
 <part name="LED2" library="SparkFun-LED" deviceset="LED" device="5MM-KIT" value="RED"/>
