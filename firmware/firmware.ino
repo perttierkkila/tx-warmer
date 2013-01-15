@@ -34,7 +34,7 @@ const int LIPO_CRITICAL_VOLTAGE = 3500;
 const int PIN_BATTERY = PA7; // A0 for atmega-dev
 const int PIN_GREEN = 10;
 const int PIN_RED = 9; // 12 for atmega-dev
-const int PIN_PWM = 2;
+const int PIN_PWM = 5;
 const int PIN_BUTTON = 8;
 
 // selected power-stage
@@ -138,8 +138,7 @@ void loop() {
   int newDutyCycle = calculateDutyCycle(batteryVoltage);
   if (dutyCycle != newDutyCycle) {
     dutyCycle = newDutyCycle;
-    // prescaler 1024: TCCR0B = _BV(CS00) | _BV(CS02); 
-    // result => works and breaks delays (also affected by prescaler)
+    // prescaler TCCR1B = _BV(CS0x) | _BV(CS0x); 
     analogWrite(PIN_PWM, newDutyCycle);
   }
 

@@ -3007,11 +3007,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="IRLB8743" gate="G$1" pin="G"/>
 <wire x1="45.72" y1="38.1" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="35.56" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="ATTINY84A" gate="G$1" pin="5"/>
-<wire x1="104.14" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="50.8" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-<junction x="45.72" y="38.1"/>
 <pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="38.1" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="38.1" x2="121.92" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="ATTINY84A" gate="G$1" pin="8"/>
+<wire x1="121.92" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
+<junction x="45.72" y="38.1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
