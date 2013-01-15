@@ -2,6 +2,9 @@
  * TX-warmer firmware v1.0, GPLv3-licence
  * Author    Pertti Erkkilä (pertti.erkkila@gmail.com)
  * Hardware  http://www.kopterit.net/index.php/topic,17572.0.html
+ *
+ * Custom firmware for 4S LiFes (different cut-offs and fixed cell
+ * count to prevent miss-detects)
  ****************************************************************/
 
 #include <PinChangeInterrupt.h>
