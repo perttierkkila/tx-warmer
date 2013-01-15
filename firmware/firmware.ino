@@ -78,7 +78,7 @@ void setup() {
 
   // constant cut-off for 4S-life
   cutoffVoltage = 9500;
-  criticalVoltage = 9000;
+  criticalVoltage = 8500;
 
   // indicate cell count by blinking both leds
   for (int i = 0; i < 4; i++) {
