@@ -31,11 +31,15 @@ const int LIPO_CRITICAL_VOLTAGE = 3500;
 // ATtiny pin mappings
 // for ADC, use ADC-channel number
 // other pins, running order skipping VCC, RESET and GND (eg pin2 = 1)
-const int PIN_BATTERY = PA7; // A0 for atmega-dev
+const int PIN_BATTERY = PA7;
 const int PIN_GREEN = 10;
-const int PIN_RED = 9; // 12 for atmega-dev
+const int PIN_RED = 9;
 const int PIN_PWM = 5;
 const int PIN_BUTTON = 8;
+const int PIN_DIP1 = 4;
+const int PIN_DIP2 = 2;
+const int PIN_DIP3 = 7;
+const int PIN_DIP4 = 6;
 
 // selected power-stage
 // > 0: selected power stage from array
@@ -70,8 +74,21 @@ void setup() {
   pinMode(PIN_RED, OUTPUT);
   pinMode(PIN_PWM, OUTPUT);
   pinMode(PIN_BATTERY, INPUT);
+
   pinMode(PIN_BUTTON, INPUT);
   digitalWrite(PIN_BUTTON, HIGH); // enable INPUT_PULLUP, not supported with attiny
+
+  pinMode(PIN_DIP1, INPUT);
+  digitalWrite(PIN_DIP1, HIGH); // enable INPUT_PULLUP, not supported with attiny
+
+  pinMode(PIN_DIP2, INPUT);
+  digitalWrite(PIN_DIP2, HIGH); // enable INPUT_PULLUP, not supported with attiny
+
+  pinMode(PIN_DIP3, INPUT);
+  digitalWrite(PIN_DIP3, HIGH); // enable INPUT_PULLUP, not supported with attiny
+
+  pinMode(PIN_DIP4, INPUT);
+  digitalWrite(PIN_DIP4, HIGH); // enable INPUT_PULLUP, not supported with attiny
 
   // calculate cutoff and critical voltages
   long batteryVoltage = readVoltage();
