@@ -120,6 +120,10 @@
 <text x="13.97" y="13.335" size="1.27" layer="22" rot="MR180">TX-warmer v1.6</text>
 <text x="12.7" y="10.795" size="1.143" layer="22" rot="MR180">Pertti Erkkilä 2013</text>
 <wire x1="3.81" y1="22.225" x2="3.81" y2="26.035" width="0.254" layer="21" curve="-106.260205"/>
+<text x="38.354" y="7.1882" size="1.27" layer="21" rot="R90">1</text>
+<text x="38.354" y="9.7282" size="1.27" layer="21" rot="R90">2</text>
+<text x="38.354" y="12.2682" size="1.27" layer="21" rot="R90">3</text>
+<text x="38.354" y="14.8082" size="1.27" layer="21" rot="R90">4</text>
 </plain>
 <libraries>
 <library name="ic-package">
