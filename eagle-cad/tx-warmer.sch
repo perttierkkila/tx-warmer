@@ -3272,42 +3272,41 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="SW1" gate="A" pin="1"/>
-<wire x1="101.6" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="27.94" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="20.32" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="ATTINY84A" gate="G$1" pin="7"/>
-<wire x1="99.06" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="A" pin="4"/>
+<wire x1="93.98" y1="20.32" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="SW1" gate="A" pin="2"/>
-<wire x1="101.6" y1="25.4" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="25.4" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="22.86" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="ATTINY84A" gate="G$1" pin="5"/>
 <wire x1="96.52" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="A" pin="3"/>
+<wire x1="96.52" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <wire x1="124.46" y1="50.8" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="35.56" x2="93.98" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="A" pin="3"/>
-<wire x1="93.98" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="ATTINY84A" gate="G$1" pin="10"/>
 <wire x1="124.46" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="35.56" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="A" pin="2"/>
+<wire x1="99.06" y1="25.4" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<wire x1="127" y1="33.02" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="33.02" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="A" pin="4"/>
-<wire x1="91.44" y1="20.32" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="127" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="127" y1="33.02" x2="127" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="ATTINY84A" gate="G$1" pin="9"/>
 <wire x1="127" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="33.02" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="A" pin="1"/>
 </segment>
 </net>
 </nets>
