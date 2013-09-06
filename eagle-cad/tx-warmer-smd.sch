@@ -2241,7 +2241,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100k"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDS6630A"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDS6630A" value="IR F8721"/>
 <part name="B-" library="SparkFun-Connectors" deviceset="M01" device="PTH_2MM"/>
 <part name="H-" library="SparkFun-Connectors" deviceset="M01" device="PTH_2MM"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2256,7 +2256,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U2" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD"/>
+<part name="U2" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD" value="MCP1804T"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD"/>
 <part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
 <part name="TP2" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
