@@ -4695,9 +4695,9 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="GND1" gate="1" x="35.56" y="53.34"/>
 <instance part="U$1" gate="G$1" x="50.8" y="76.2"/>
 <instance part="GND2" gate="1" x="12.7" y="43.18" rot="R180"/>
-<instance part="U$2" gate="G$1" x="101.6" y="71.12"/>
-<instance part="GND3" gate="1" x="121.92" y="73.66" rot="R180"/>
-<instance part="GND5" gate="1" x="68.58" y="55.88"/>
+<instance part="U$2" gate="G$1" x="101.6" y="73.66"/>
+<instance part="GND3" gate="1" x="121.92" y="76.2" rot="R180"/>
+<instance part="GND5" gate="1" x="68.58" y="63.5"/>
 <instance part="SWITCH" gate="S" x="149.86" y="55.88"/>
 <instance part="GND7" gate="1" x="45.72" y="20.32"/>
 <instance part="GND8" gate="1" x="129.54" y="5.08"/>
@@ -4706,14 +4706,14 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="R7" gate="G$1" x="142.24" y="25.4" rot="R90"/>
 <instance part="R6" gate="G$1" x="45.72" y="30.48" rot="R270"/>
 <instance part="R3" gate="G$1" x="68.58" y="83.82" rot="R270"/>
-<instance part="R4" gate="G$1" x="68.58" y="66.04" rot="R270"/>
+<instance part="R4" gate="G$1" x="68.58" y="71.12" rot="R270"/>
 <instance part="GND6" gate="1" x="160.02" y="60.96" rot="R180"/>
 <instance part="LED1" gate="G$1" x="142.24" y="15.24"/>
 <instance part="LED2" gate="G$1" x="129.54" y="15.24"/>
 <instance part="C5" gate="G$1" x="50.8" y="66.04"/>
-<instance part="C4" gate="G$1" x="60.96" y="63.5"/>
-<instance part="C3" gate="G$1" x="111.76" y="68.58" rot="R90"/>
-<instance part="R1" gate="G$1" x="86.36" y="60.96" rot="R270"/>
+<instance part="C4" gate="G$1" x="60.96" y="71.12"/>
+<instance part="C3" gate="G$1" x="111.76" y="71.12" rot="R90"/>
+<instance part="R1" gate="G$1" x="96.52" y="66.04" rot="R270"/>
 <instance part="B+" gate="G$1" x="-5.08" y="78.74"/>
 <instance part="H+" gate="G$1" x="-5.08" y="71.12"/>
 <instance part="B-" gate="G$1" x="-5.08" y="38.1"/>
@@ -4784,20 +4784,20 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="121.92" y1="71.12" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="73.66" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="ATTINY84A" gate="G$1" pin="14"/>
-<wire x1="121.92" y1="68.58" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="71.12" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="68.58" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
-<junction x="121.92" y="68.58"/>
+<wire x1="114.3" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
+<junction x="121.92" y="71.12"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="68.58" y1="58.42" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
-<junction x="68.58" y="60.96"/>
+<wire x1="68.58" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="66.04" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
+<junction x="68.58" y="66.04"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -4873,16 +4873,15 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="5V" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="5V"/>
-<wire x1="101.6" y1="71.12" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="73.66" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="ATTINY84A" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="68.58" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="71.12" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
-<junction x="101.6" y="68.58"/>
+<wire x1="106.68" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
+<junction x="101.6" y="71.12"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="66.04" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="68.58" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
@@ -4932,17 +4931,16 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="68.58" y1="71.12" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="73.66" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="48.26" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
-<junction x="68.58" y="73.66"/>
+<wire x1="68.58" y1="76.2" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="48.26" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
+<junction x="68.58" y="78.74"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="ATTINY84A" gate="G$1" pin="6"/>
-<wire x1="104.14" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="68.58" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="48.26" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="76.2" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="78.74" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -4984,8 +4982,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="ATTINY84A" gate="G$1" pin="4"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="53.34" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="53.34" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="5"/>
 <wire x1="96.52" y1="25.4" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
 <junction x="96.52" y="53.34"/>
@@ -5051,11 +5048,9 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="N$20" class="0">
 <segment>
 <pinref part="ATTINY84A" gate="G$1" pin="3"/>
-<wire x1="104.14" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="55.88" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="55.88" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="JP-2" gate="A" pin="1"/>
-<wire x1="76.2" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="27.94" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -5069,12 +5064,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="115,1,111.76,54.538,ATTINY84A,,,,,"/>
-<approved hash="115,1,149.86,58.0305,SWITCH,,,,,"/>
-<approved hash="115,1,37.0247,74.3373,LP2950,,,,,"/>
-<approved hash="115,1,109.22,22.7288,SW1,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
