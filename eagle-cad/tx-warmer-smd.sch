@@ -2233,8 +2233,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="U$4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10k"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270?"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="220?"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="LED3" library="SparkFun-LED" deviceset="LED" device="1206" value="RED"/>
 <part name="LED4" library="SparkFun-LED" deviceset="LED" device="1206" value="GREEN"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2245,14 +2245,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="B-" library="SparkFun-Connectors" deviceset="M01" device="PTH_2MM"/>
 <part name="H-" library="SparkFun-Connectors" deviceset="M01" device="PTH_2MM"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="2.2uF?"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="U$2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="2.2uF?"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="22uF?"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270?"/>
-<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270?"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100k"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="33k"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2369,16 +2369,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="27.94" y="43.18"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="43.18" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="43.18" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="43.18" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
 <junction x="38.1" y="43.18"/>
-<pinref part="U2" gate="G$1" pin="BP"/>
-<wire x1="33.02" y1="55.88" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
-<junction x="33.02" y="43.18"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="15.24" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="60.96" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
@@ -2525,7 +2521,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="5.08" y1="71.12" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
 <junction x="5.08" y="66.04"/>
 <pinref part="U2" gate="G$1" pin="IN"/>
-<wire x1="15.24" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="BP"/>
+<wire x1="12.7" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="55.88" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="73.66" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
+<junction x="12.7" y="66.04"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
@@ -2570,8 +2573,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheet>
 </sheets>
 <errors>
-<approved hash="202,1,15.24,55.88,U2,EN,,,,"/>
-<approved hash="115,1,187.96,7.23053,SWITCH,,,,,"/>
+<approved hash="113,1,187.96,7.23053,S1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
