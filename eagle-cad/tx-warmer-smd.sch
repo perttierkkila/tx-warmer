@@ -2573,6 +2573,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheet>
 </sheets>
 <errors>
+<approved hash="202,1,15.24,55.88,U2,EN,,,,"/>
 <approved hash="113,1,187.96,7.23053,S1,,,,,"/>
 </errors>
 </schematic>
